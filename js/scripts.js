@@ -51,12 +51,12 @@ async function getLocalTime(city, weather) {
         const weatherIcon = document.querySelector(".weather-icon");
         // Checking the time range and logging the appropriate message
         if (timeInHours >= 6 && timeInHours <= 17) {
-            weatherIcon.src = ``;
+            
             weatherIcon.src = `${imageUrl}${weatherType}/day.png`;
             weatherIcon.setAttribute("title", weatherType + " day");
 
         } else {
-            weatherIcon.src = ``;
+            
             weatherIcon.src = `${imageUrl}${weatherType}/night.png`;
             weatherIcon.setAttribute("title", weatherType + " night");
         }
